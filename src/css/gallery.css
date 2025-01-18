@@ -1,0 +1,134 @@
+.gallery {
+    position: relative;
+    overflow: visible;
+    padding: 0 22px;
+  }
+  
+.title-gallery {
+    text-align: center;
+    color: rgb(6, 6, 6);
+    font-family: Junge;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0%;
+  }
+  
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+.swiper-container {
+    position: relative;
+    width: 100%;
+    max-width: 1040px;
+    margin: 35px auto;
+  }
+  
+  /* Стилі для слайдів */
+.swiper-wrapper {
+    display: flex;
+  }
+  
+.swiper .swiper-slide {
+    flex-shrink: 0;
+    width: calc(50% - 7px);
+    height: 306px;
+  }
+  
+  /* Стилі для кнопок навігації */
+.swiper-button-next,
+.swiper-button-prev {
+    background: transparent;
+    border: none;
+    width: 40px;
+    height: 47px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-90%);
+    z-index: 10;
+    cursor: pointer;
+  }
+  
+  /* Позиціонування кнопок відносно контейнера */
+.swiper-button-next {
+    background-image: url('../img/gallery/nextbtn@2x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: -6%;
+  }
+  
+.swiper-button-prev {
+    background-image: url('../img/gallery/prevbtn@2x.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: -6%;
+  }
+  
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: none;
+  }
+  
+  /* Стилі для пагінації */
+.swiper-pagination {
+    position: relative;
+    margin-top: 50px;
+  }
+  
+.swiper-pagination .swiper-pagination-bullet {
+    width: 23px;
+    height: 23px;
+    background-color: rgba(12, 145, 0, 0.61);
+    opacity: 1;
+  }
+  
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #007D14;
+  }
+  
+  /* container flowers */
+.image-container {
+    position: relative; 
+    width: 510px;
+    height: 306px;
+    overflow: hidden;
+  }
+  
+.background-img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;  
+    object-fit: cover;  
+    object-position: center;  
+  }
+  
+.flower-img {
+    position: absolute;  
+    z-index: 10;  
+  }
+  
+  /* Позиції квітів */
+.flower-img:nth-child(2) {
+    top: 30%;
+    left: -10%;
+    z-index: 7;
+  }
+  
+.flower-img:nth-child(3) {
+    top: 8%; 
+    left: 24%;
+    z-index: 5;
+  }
+  
+.flower-img:nth-child(4) {
+    top: -6%; 
+    left: 50%;
+    z-index: 3;
+  }
