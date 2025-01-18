@@ -1,0 +1,19 @@
+.about,
+.characters,
+.advantages,
+.gallery,
+.why-choose,
+.faq {
+  background-color: #f1f1f1;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.about-text p,
+.advantages ul,
+.why-choose ul,
+.faq ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
