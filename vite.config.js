@@ -48,7 +48,7 @@ export default defineConfig(({ command }) => {
     ],
     css: {
       preprocessorOptions: {
-        scss: {
+        css: {
           additionalData: globalStylesOptions,
         },
       },
