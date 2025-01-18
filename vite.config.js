@@ -14,6 +14,9 @@ export default defineConfig(({ command }) => {
     build: {
       sourcemap: true,
 
+      // Set base for GitHub Pages
+      base: '/florescence-project/', // Add the base URL of your repository
+
       rollupOptions: {
         input: glob.sync('./src/*.html'),
         output: {
@@ -25,7 +28,7 @@ export default defineConfig(({ command }) => {
           entryFileNames: 'commonHelpers.js',
         },
       },
-      outDir: '../dist',
+      outDir: '../dist', // Make sure this is correct relative to the project structure
     },
     plugins: [
       injectHTML(),
