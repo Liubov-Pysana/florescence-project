@@ -1,134 +1,224 @@
 .gallery {
-    position: relative;
-    overflow: visible;
-    padding: 0 22px;
-  }
-  
+  width: 320px;
+  margin: 0 auto;
+  padding: 20px 14px;
+}
+
 .title-gallery {
-    text-align: center;
-    color: rgb(6, 6, 6);
-    font-family: Junge;
-    font-size: 52px;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: 0%;
-  }
-  
-.gallery-img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-.swiper-container {
-    position: relative;
-    width: 100%;
-    max-width: 1040px;
-    margin: 35px auto;
-  }
-  
-  /* Стилі для слайдів */
+  text-align: center;
+  color: rgb(6, 6, 6);
+  font-family: Junge;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 0%;
+  margin-bottom: 24px;
+}
+
 .swiper-wrapper {
-    display: flex;
-  }
-  
+  display: none;
+}
+
+.list-gallery {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.gallery-img-mobile {
+  width: 136px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* container flowers */
+.image-container-mobile {
+  position: relative; 
+  width: 136px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.background-img-mobile {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;  
+  object-fit: cover;  
+  object-position: center;  
+}
+
+.flower-img-mobile {
+  width: 66px;
+  height: 72px;
+  position: absolute;  
+  z-index: 10;  
+}
+
+/* position flowers */
+.flower-img-mobile:nth-child(2) {
+  top: 26%;
+  left: -4%;
+  z-index: 7;
+}
+
+.flower-img-mobile:nth-child(3) {
+  top: 24%; 
+  left: 28%;
+  z-index: 5;
+}
+
+.flower-img-mobile:nth-child(4) {
+  top: 10%; 
+  left: 50%;
+  z-index: 3;
+}
+
+@media screen and (min-width: 1200px) {
+.gallery {
+    width: 1200px;
+}
+
+.list-gallery {
+  display: none;
+}
+
+.section-gallery {
+  position: relative;
+  overflow: visible;
+  padding: 0 22px;
+}
+
+.title-gallery {
+  font-size: 52px;
+  margin-bottom: 35px;
+}
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  max-width: 1040px;
+  margin: 35px auto;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* slide styles*/
+.swiper-wrapper {
+  display: flex;
+}
+
 .swiper .swiper-slide {
-    flex-shrink: 0;
-    width: calc(50% - 7px);
-    height: 306px;
-  }
-  
-  /* Стилі для кнопок навігації */
+  flex-shrink: 0;
+  width: calc(50% - 7px);
+  height: 306px;
+}
+
+/* styles for navigation buttons */
 .swiper-button-next,
 .swiper-button-prev {
-    background: transparent;
-    border: none;
-    width: 40px;
-    height: 47px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-90%);
-    z-index: 10;
-    cursor: pointer;
-  }
-  
-  /* Позиціонування кнопок відносно контейнера */
+  background: transparent;
+  border: none;
+  width: 40px;
+  height: 47px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-90%);
+  z-index: 10;
+  cursor: pointer;
+}
+
 .swiper-button-next {
-    background-image: url('../img/gallery/nextbtn@2x.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    right: -6%;
-  }
-  
+  background-image: url('../img/gallery/nextbtn@2x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: -6%;
+}
+
 .swiper-button-prev {
-    background-image: url('../img/gallery/prevbtn@2x.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    left: -6%;
-  }
-  
+  background-image: url('../img/gallery/prevbtn@2x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: -6%;
+}
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
-    content: none;
-  }
-  
-  /* Стилі для пагінації */
+  content: none;
+}
+
+/* pagination */
 .swiper-pagination {
-    position: relative;
-    margin-top: 50px;
-  }
-  
+  position: relative;
+  margin-top: 50px;
+}
+
 .swiper-pagination .swiper-pagination-bullet {
-    width: 23px;
-    height: 23px;
-    background-color: rgba(12, 145, 0, 0.61);
-    opacity: 1;
-  }
-  
+  width: 23px;
+  height: 23px;
+  background-color: rgba(12, 145, 0, 0.61);
+  opacity: 1;
+}
+
 .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #007D14;
-  }
-  
-  /* container flowers */
+  background-color: #0C9100;
+}
+
+/* container flowers */
 .image-container {
-    position: relative; 
-    width: 510px;
-    height: 306px;
-    overflow: hidden;
-  }
-  
+  position: relative; 
+  width: 510px;
+  height: 306px;
+  overflow: hidden;
+}
+
 .background-img {
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;  
-    object-fit: cover;  
-    object-position: center;  
-  }
-  
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;  
+  object-fit: cover;  
+  object-position: center;  
+}
+
 .flower-img {
-    position: absolute;  
-    z-index: 10;  
-  }
-  
-  /* Позиції квітів */
+  position: absolute;  
+  z-index: 10;  
+}
+
 .flower-img:nth-child(2) {
-    top: 30%;
-    left: -10%;
-    z-index: 7;
-  }
-  
+  top: 24%;
+  left: -10%;
+  z-index: 7;
+}
+
 .flower-img:nth-child(3) {
-    top: 8%; 
-    left: 24%;
-    z-index: 5;
-  }
-  
+  top: 18%; 
+  left: 24%;
+  z-index: 5;
+}
+
 .flower-img:nth-child(4) {
-    top: -6%; 
-    left: 50%;
-    z-index: 3;
+  top: 6%; 
+  left: 50%;
+  z-index: 3;
+}
+}
+
+@media screen and (max-width: 1199px) {
+  .swiper-button-next,
+  .swiper-button-prev,
+  .swiper-pagination {
+    display: none;
   }
+}
