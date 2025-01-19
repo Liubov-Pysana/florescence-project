@@ -11,14 +11,17 @@
       rel="stylesheet"
     />
     <link rel="icon" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
     
     <script type="module" crossorigin src="/florescence-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/florescence-project/assets/index-26900749.css">
+    <link rel="stylesheet" href="/florescence-project/assets/index-950d6cc8.css">
   </head>
   <body>
     <section></section>
     <h1>Florescence: Flower Merge Game</h1>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     
     <header class="header">
   <div class="container">
@@ -152,11 +155,154 @@
 </section>
 
     <section class="gallery">
-  <h2>Gallery</h2>
-  <div class="container">
-    <img src="before.jpg" alt="Before Merge" />
-    <img src="after.jpg" alt="After Merge" />
+  <h2 class="title-gallery">Gallery</h2>
+
+<div class="swiper-container">
+<div class="swiper">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide">
+          <img 
+          class="gallery-img"
+          src="../img/gallery/solvepuzzles@2x.jpg" 
+          alt="solvepuzzles" 
+          width="510" 
+          height="306">
+      </li>
+      <li class="swiper-slide">
+        <img
+          class="gallery-img" 
+          src="../img/gallery/merjetoplay@2x.jpg" 
+          alt="merjetoplay" 
+          width="510" 
+          height="306">
+      </li>
+      <li class="swiper-slide">
+        <div class="image-container">
+        <img 
+            class="background-img"
+            src="../img/gallery/forest@2x.jpg" 
+            alt="forest" 
+            width="510" 
+            height="306"
+          >
+          <img 
+            class="flower-img"
+            src="../img/gallery/petunia@2x.png" 
+            alt="petunia" 
+            width="300" 
+            height="300"
+            >
+          <img 
+            class="flower-img"
+            src="../img/gallery/gardenias@2x.png" 
+            alt="gardenias" 
+            width="300" 
+            height="300"
+            >
+          <img 
+            class="flower-img"
+            src="../img/gallery/rose@2x.png" 
+            alt="rose" 
+            width="300" 
+            height="300"
+            >
+          </div>
+      </li>
+      <li class="swiper-slide">
+        <img
+          class="gallery-img" 
+          src="../img/gallery/breedplants@2x.jpg" 
+          alt="breedplants" 
+          width="510" 
+          height="306">
+      </li>
+      <li class="swiper-slide">
+        <img 
+          class="gallery-img"
+          src="../img/gallery/magicalrose@2x.jpg"
+          alt="magicalrose" 
+          width="510" 
+          height="306">
+      </li>
+    </ul>
+
+    <!-- pagination -->
+    <div class="swiper-pagination"></div>
   </div>
+    
+    <!-- button nav-->
+    <button class="swiper-button-next"></button>
+    <button class="swiper-button-prev"></button>
+  </div>
+
+    <!-- mobail gallery -->
+    <ul class="list-gallery">
+      <li>
+          <img 
+          class="gallery-img-mobile"
+          src="../img/gallery/solvepuzzles@2x.jpg" 
+          alt="solvepuzzles" 
+          width="510" 
+          height="306">
+      </li>
+      <li>
+        <img
+          class="gallery-img-mobile" 
+          src="../img/gallery/merjetoplay@2x.jpg" 
+          alt="mergetoplay" 
+          width="510" 
+          height="306">
+      </li>
+      <li>
+        <!-- container flowers  -->
+        <div class="image-container-mobile">
+        <img 
+            class="background-img-mobile"
+            src="../img/gallery/forest@2x.jpg" 
+            alt="forest" 
+            width="510" 
+            height="306"
+          >
+          <img 
+            class="flower-img-mobile"
+            src="../img/gallery/petunia@2x.png" 
+            alt="petunia" 
+            width="300" 
+            height="200"
+            >
+          <img 
+            class="flower-img-mobile"
+            src="../img/gallery/gardenias@2x.png" 
+            alt="gardenias" 
+            width="300" 
+            height="200"
+            >
+          <img 
+            class="flower-img-mobile"
+            src="../img/gallery/rose@2x.png" 
+            alt="rose" 
+            width="300" 
+            height="200"
+            >
+          </div>
+      </li>
+      <li>
+        <img
+          class="gallery-img-mobile" 
+          src="../img/gallery/breedplants@2x.jpg" 
+          alt="breedplants" 
+          width="510" 
+          height="306">
+      </li>
+      <li>
+        <img 
+          class="gallery-img-mobile"
+          src="../img/gallery/magicalrose@2x.jpg"
+          alt="magicalrose" 
+          width="510" 
+          height="306">
+      </li>
+    </ul>
 </section>
 
     <section class="why-choose">
