@@ -1,0 +1,105 @@
+.faq {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 20px 14px;
+  }
+  
+  .faq-title {
+    text-align: center;
+    font-family: var(--accent-font-family);
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+  
+  .faq-item {
+    margin-bottom: 10px;
+    border: 1px solid var(--border-bg-olive);
+    border-radius: 5px;
+    position: relative; 
+    overflow: visible; 
+  }
+  
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    background-color: var(--container-bg-olive);
+    border: none;
+    padding: 17px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+    transition: max-height 0.3s ease;
+    position: relative;
+  }
+  
+  .faq-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%) rotate(0deg);
+    width: 20px;  
+    height: 20px; 
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-item.active .faq-answer {
+    max-height: 200px;
+    padding: 15px;
+    padding-top: 0;
+  }
+  
+  .faq-item.active .faq-toggle-icon {
+    transform: translateY(-50%) rotate(180deg); 
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    background-color: var(--container-bg-olive);
+    font-size: 13px;
+    line-height: 1.2;
+    letter-spacing: 0%;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+  
+  @media screen and (min-width: 1200px) {
+  .faq {
+      max-width: 1200px;
+      padding: 46px 62px 60px 62px;
+    }
+    
+  .faq-title {
+      font-size: 52px;
+      margin-bottom: 35px;
+    }
+    
+  .faq-item {
+      margin-bottom: 25px;
+      overflow:  hidden; 
+    }
+    
+  .faq-question {
+      padding: 24px 30px;
+      font-size: 30px;
+      outline: none;
+    }
+    
+  .faq-toggle-icon {
+      right: 30px;
+      width: 62px;  
+      height: 62px; 
+    }
+  
+  .faq-item.active .faq-answer {
+      padding: 0 30px 30px 30px;  
+  }
+  
+  .faq-answer {
+      overflow: hidden;
+      font-size: 20px;
+      padding: 0 30px;
+    }
+  }
