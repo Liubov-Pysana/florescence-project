@@ -1,0 +1,17 @@
+:root {
+    /* Colors */
+    --body-bg: #FBF4E8;
+
+    --primary-color: #060606;
+    --white-color: #FDFDFD;
+    --border-bg-olive: #009E19;
+    --green-color: rgb(0, 125, 20);
+    
+    --active-green-color: rgba(12, 145, 0, 0.61);
+    --container-bg-olive: rgba(0, 125, 20, 0.25);
+
+
+          /* Fonts */
+    --primary-font-family: 'Montserrat', sans-serif;
+    --accent-font-family: 'Junge', sans-serif;
+}
