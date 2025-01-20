@@ -1,0 +1,56 @@
+.advantages {
+    max-width: 320px;
+    width: 100%;
+    padding: 20px 14px 30px 14px;
+    margin: 0 auto;
+  }
+
+.advantages-title {
+    font-family: var(--accent-font-family);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 54px;
+}
+  
+  .container-advantages {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .advantages-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Відступ між елементами */
+  }
+  
+  .advantages-item {
+    position: relative;
+    width: 136px; /* Ширина елемента */
+    padding: 20px 48px 20px 12px; /* Внутрішні відступи */
+    clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+    background-color:  #060606;/* Колір бордера */
+    z-index: 0; /* Порядок відображення */
+  }
+  
+  .advantages-item::after {
+    content: '';
+    position: absolute;
+    top: 3px; /* Відступ для створення рівного бордера */
+    left: 3px;
+    width: calc(100% - 6px); /* Враховує відступи зверху та зліва */
+    height: calc(100% - 6px);
+    background-color: white; /* Основний колір елемента */
+    clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+    z-index: -1; /* Відображення під основним текстом */
+  }
+  
+
+  .subtitle-advantages {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+  
