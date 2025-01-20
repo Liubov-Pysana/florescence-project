@@ -1,1 +1,2 @@
-import "./js/burger";
+import "./js/gallery";
+import "./js/faq";
