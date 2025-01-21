@@ -154,10 +154,10 @@
   }
 
 .advantages-arrows {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 106px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 106px;
 }
 }
 
