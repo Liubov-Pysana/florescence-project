@@ -5,13 +5,6 @@
   margin: 0 auto;
 }
 
-.advantages-title {
-  font-family: var(--accent-font-family);
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 54px;
-}
-
 .container-advantages {
   display: flex;
   align-items: center;
@@ -82,11 +75,6 @@
   .advantages {
     max-width: 1200px;
     padding: 44px 104px;
-  }
-
-  .advantages-title {
-    font-size: 52px;
-    margin-bottom: 34px;
   }
 
   .container-advantages {
