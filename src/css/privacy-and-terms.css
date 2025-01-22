@@ -15,6 +15,16 @@
 .back-arrow {
     width: 28px;
     height: 28px;
+    cursor: pointer;
+}
+
+.link-go {
+    cursor: pointer;
+}
+
+.link-go:active,
+.link-go:hover {
+  color: var(--active-green-color);
 }
 
 .title-page {
@@ -22,11 +32,18 @@
     font-weight: 600;
     margin-bottom: 14px;
     text-align: center;
+    color: var(--primary-color);
 }
 
 .description-page {
     font-size: 13px;
     margin-bottom: 24px;
+    line-height: 1.2;
+    text-align: start;
+}
+
+.description-page-bottom {
+    margin-bottom: 12px;
 }
 
 .subtitle-page {
@@ -34,4 +51,88 @@
     font-weight: 500;
     margin-bottom: 15px;
     text-align: center;
+}
+
+.social-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc; 
+    color: var(--link-defolt-color);
+    padding-left: 24px;
+  }
+  
+  .social-list-description {
+    font-size: 13px;
+    color: var(--link-defolt-color);
+    text-decoration: underline; 
+  }
+
+  .list-page-description {
+    font-size: 13px;
+    list-style-type: disc;
+    padding-left: 10px;
+  }
+
+.item-page {
+    margin-bottom: 0;
+    padding-left: 4px;
+    line-height: 1.2;
+}
+
+@media screen and (min-width: 1200px) {
+    .section-police {
+        max-width: 1200px;
+        padding: 50px 38px 140px 38px;
+    }
+
+    .back-arrow {
+        width: 62px;
+        height: 62px;
+    }
+
+    .container-pages {
+        margin-bottom: 24px;
+    }
+
+    .link-go {
+       font-size: 25px;
+    }
+
+    .title-page {
+        font-size: 52px;
+        margin-bottom: 45px;
+    }
+
+    .description-page {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .subtitle-page {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 45px;
+    }
+
+    .social-list {
+        padding-left: 40px;
+      }
+
+    .social-list-description {
+        font-size: 20px;
+      }
+
+      .list-page-description {
+        font-size: 20px;
+        padding-left: 20px;
+      }
+
+      .item-page {
+        margin-bottom: 0;
+      }
+
+      .description-page-bottom {
+        margin-bottom: 15px;
+    }
+    
 }
