@@ -4,6 +4,16 @@
   padding: 20px 14px;
 }
 
+.title-gallery {
+  text-align: center;
+  color: rgb(6, 6, 6);
+  font-family: Junge;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 0%;
+  margin-bottom: 24px;
+}
+
 .swiper-wrapper {
   display: none;
 }
@@ -70,6 +80,11 @@
 @media screen and (min-width: 1200px) {
 .gallery {
     width: 1200px;
+}
+
+.title-gallery {
+  font-size: 52px;
+  margin-bottom: 35px;
 }
 
 .list-gallery {
