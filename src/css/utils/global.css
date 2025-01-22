@@ -3,10 +3,6 @@ html {
   scroll-behavior: smooth;
 }
 
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
@@ -17,29 +13,7 @@ body {
   margin: 0;
 }
 
-h2 {
-  font-family: 'Junge', sans-serif;
-  font-weight: 400;
-  font-size: 52px;
-  text-align: center;
-  color: #060606;
-  margin-bottom: 35px;
-}
-
-p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-h1 {
-  font-family: 'Junge', sans-serif;
-  font-weight: 400;
-  font-size: 62px;
-  text-align: center;
-  color: #fdfdfd;
-}
-
+h1,
 h3,
 h4,
 h5,
@@ -69,15 +43,13 @@ img {
   height: auto;
 }
 
-:root {
+body {
   font-family: var(--primary-font-family);
   font-size: 16px;
   line-height: 1.2;
   font-weight: 400;
   letter-spacing: 0%;
-
   color: var(--primary-color);
-  background-color: var(--body-bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -86,8 +58,21 @@ img {
   -webkit-text-size-adjust: 100%;
 }
 
+@media (max-width: 1200px) {
+  body.is-hidden {
+    overflow-y: scroll; 
+  }
+}
+
+@media (max-width: 320px) {
+  body.is-hidden {
+    overflow-y: scroll; 
+  }
+}
+
+/*scrollbar*/
 body::-webkit-scrollbar {
-  width: 0px;
+  width: 12px;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -96,25 +81,57 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-  background-color: var(--scrollbar-track-bg);
+  background-color: var(--scrollbar-track-bg); 
 }
 
-/* @media screen and (min-width: 1200px) {
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section {
+  padding: 30px 0;
+}
+
+@media (max-width: 320px) {
+  .section {
+    padding: 20px 0; 
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 16px;
+}
+
+@media (max-width: 320px) {
   .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 66px;
-    width: 100%;
+    max-width: 320px; 
   }
-  
-  body::-webkit-scrollbar-thumb {
-    background: var(--scrollbar-thumb-bg);
-    border-radius: 20px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px; 
+    padding: 0 24px;
   }
-  
-  body::-webkit-scrollbar-track {
-    background-color: var(--scrollbar-track-bg);
+}
+
+main {
+  margin-top: 0; 
+}
+
+@media (max-width: 1200px) {
+  main {
+    margin-top: 0; 
   }
-  
-} */
+}

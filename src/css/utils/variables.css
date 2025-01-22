@@ -11,8 +11,16 @@
     --container-bg-olive: rgba(0, 125, 20, 0.25);
     --background-olive-muted: rgba(12, 145, 0, 0.23);
 
+    --scrollbar-thumb-bg: rgba(18, 20, 23, 0.1);
+    --scrollbar-track-bg: rgba(255, 255, 255, 1);
+
 
           /* Fonts */
     --primary-font-family: 'Montserrat', sans-serif;
     --accent-font-family: 'Junge', sans-serif;
+
+      /* Breakpoints */
+  --mobile: 320px;
+  --desktop: 1200px;
+
 }
