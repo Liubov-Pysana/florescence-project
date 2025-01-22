@@ -73,6 +73,7 @@ body {
   font-weight: 400;
   letter-spacing: 0%;
   color: var(--primary-color);
+  background-color: var(--body-bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -120,37 +121,8 @@ body::-webkit-scrollbar-track {
   margin: -1px;
 }
 
-/* .section {
-  background-color: var(--body-bg);
+ .section {
   margin: 0 auto;
+  padding: 0 14px;
 }
 
-.container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 16px;
-}  */
-
-/* @media (max-width: 320px) {
-  .container {
-    max-width: 320px; 
-  }
-}
-
-@media (max-width: 1200px) {
-  .container {
-    max-width: 1200px; 
-    padding: 0 14px;
-  }
-}
-
-main {
-  margin-top: 0; 
-}
-
-@media (max-width: 1200px) {
-  main {
-    margin-top: 0; 
-  }
-} */
