@@ -81,10 +81,10 @@
 @media screen and (min-width: 1200px) {
   .advantages {
     max-width: 1200px;
-    padding: 44px 104px;
   }
 
   .container-advantages {
+    padding: 44px 104px;
     gap: 24px;
   }
 
