@@ -13,19 +13,6 @@
 @import './faq.css';
 @import './footer.css';
 @import './advantages.css';
-@import './footer.css';
 @import './privacy-and-terms.css';
 
 
-@media (min-width: 320px) and (max-width: 1200px) {
-    .section {
-      background-color: var(--body-bg);
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .section {
-      background-color: var(--body-bg);
-    }
-  }
-  

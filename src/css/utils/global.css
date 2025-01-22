@@ -73,6 +73,7 @@ body {
   font-weight: 400;
   letter-spacing: 0%;
   color: var(--primary-color);
+  background-color: var(--body-bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -80,8 +81,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
-
 
 @media (max-width: 1200px) {
   body.is-hidden {
@@ -95,7 +94,7 @@ body {
   }
 }
 
-/*scrollbar*/
+
 body::-webkit-scrollbar {
   width: 12px;
 }
@@ -122,41 +121,8 @@ body::-webkit-scrollbar-track {
   margin: -1px;
 }
 
-.section {
-  padding: 30px 0;
-}
-
-@media (max-width: 320px) {
-  .section {
-    padding: 20px 0; 
-  }
-}
-
-.container {
+ .section {
   margin: 0 auto;
-  width: 100%;
-  padding: 0 16px;
+  padding: 0 14px;
 }
 
-@media (max-width: 320px) {
-  .container {
-    max-width: 320px; 
-  }
-}
-
-@media (max-width: 1200px) {
-  .container {
-    max-width: 1140px; 
-    padding: 0 24px;
-  }
-}
-
-main {
-  margin-top: 0; 
-}
-
-@media (max-width: 1200px) {
-  main {
-    margin-top: 0; 
-  }
-}
