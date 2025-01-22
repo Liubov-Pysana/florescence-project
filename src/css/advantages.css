@@ -11,6 +11,13 @@
   justify-content: space-between;
 }
 
+.advantages-title {
+  font-family: var(--accent-font-family);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 54px;
+}
+
 .advantages-list {
   display: flex;
   flex-direction: column;
@@ -81,6 +88,11 @@
     gap: 24px;
   }
 
+  .advantages-title {
+    font-size: 52px;
+    margin-bottom: 34px;
+  }
+  
   .advantages-list {
     gap: 42px;
   }
