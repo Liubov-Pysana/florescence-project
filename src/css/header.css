@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fbf4e8;
+  background-color: var(--body-bg);
   height: 59px;
   width: 100%;
   padding: 0 14px;
@@ -83,11 +83,7 @@
 }
 
 .header-navigation-link {
-  font-family: Helvetica;
   font-size: 17px;
-  line-height: 1.2;
-  letter-spacing: 0%;
-  color: #060606;
 }
 
 .header-navigation-link:hover,
@@ -139,7 +135,7 @@
   .header-navigation-list {
     display: flex;
     flex-direction: row;
-    gap: 52px;
+    gap: 48px;
     margin: 0;
     padding: 0;
   }
