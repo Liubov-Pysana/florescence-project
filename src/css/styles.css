@@ -4,8 +4,14 @@
 
 /* section styles */
 @import './header.css';
+@import './hero.css';
+@import './about.css';
+@import './characters.css';
+@import './advantages.css';
 @import './gallery.css';
+@import './why-choose.css';
 @import './faq.css';
+@import './footer.css';
 @import './advantages.css';
 @import './footer.css';
 @import './privacy-and-terms.css';

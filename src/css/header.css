@@ -37,7 +37,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--body-bg);
+  background-color: #fbf4e8;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -87,8 +87,8 @@
 }
 
 .header-navigation-link:hover,
-.header-navigation-link:active{
-  color: var(--active-green-color);
+.header-navigation-link:active {
+  color: #0c91003b;
 }
 
 .header-navigation.active .header-navigation-list {
@@ -154,10 +154,10 @@
 }
 
 .is-hidden {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }

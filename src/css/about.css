@@ -1,19 +1,27 @@
-.about,
-.characters,
-.advantages,
-.gallery,
-.why-choose,
-.faq {
-  background-color: #f1f1f1;
-  padding: 30px;
-  border-radius: 10px;
-  margin-bottom: 30px;
+.about {
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+  align-items: center;
 }
 
-.about-text p,
-.advantages ul,
-.why-choose ul,
-.faq ul {
-  font-size: 1.1rem;
-  line-height: 1.6;
+.title-about {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.description-about {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 320px) {
+  .title-about {
+    font-size: 28px;
+  }
+
+  .description-about {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
