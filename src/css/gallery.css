@@ -4,16 +4,6 @@
   padding: 20px 14px;
 }
 
-.title-gallery {
-  text-align: center;
-  color: rgb(6, 6, 6);
-  font-family: Junge;
-  font-size: 30px;
-  line-height: 1.2;
-  letter-spacing: 0%;
-  margin-bottom: 24px;
-}
-
 .swiper-wrapper {
   display: none;
 }
@@ -90,11 +80,6 @@
   position: relative;
   overflow: visible;
   padding: 0 22px;
-}
-
-.title-gallery {
-  font-size: 52px;
-  margin-bottom: 35px;
 }
 
 .swiper-container {
