@@ -13,29 +13,6 @@ body {
   margin: 0;
 }
 
-/* h2 {
-  font-family: 'Junge', sans-serif;
-  font-weight: 400;
-  font-size: 52px;
-  text-align: center;
-  color: #060606;
-  margin-bottom: 35px;
-}
-
-p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-h1 {
-  font-family: 'Junge', sans-serif;
-  font-weight: 400;
-  font-size: 62px;
-  text-align: center;
-  color: #fdfdfd;
-} */
-
 h2,
 h3,
 h4,
@@ -80,22 +57,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden; 
 }
 
-@media (max-width: 1200px) {
-  body.is-hidden {
-    overflow-y: scroll;
-  }
-}
-
-@media (max-width: 320px) {
-  body.is-hidden {
-    overflow-y: scroll;
-  }
+body.is-hidden {
+  overflow: auto;
 }
 
 body::-webkit-scrollbar {
-  width: 12px;
+  width: 12px; 
 }
 
 body::-webkit-scrollbar-thumb {
@@ -124,9 +94,13 @@ body::-webkit-scrollbar-track {
   padding: 30px 0;
 }
 
+.section {
+  padding: 30px 0;
+}
+
 @media (max-width: 320px) {
   .section {
-    padding: 20px 0;
+      padding: 20px 0;
   }
 }
 
@@ -136,17 +110,17 @@ body::-webkit-scrollbar-track {
   padding: 0 16px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 1200px) {
   .container {
-    max-width: 320px;
-    margin-bottom: 18px;
+      max-width: 1140px;
+      padding: 0 24px;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 320px) {
   .container {
-    max-width: 1140px;
-    padding: 0 24px;
+      max-width: 320px;
+      margin-bottom: 18px;
   }
 }
 
@@ -154,8 +128,20 @@ main {
   margin-top: 0;
 }
 
-@media (max-width: 1200px) {
-  main {
-    margin-top: 0;
+@media (min-width: 320px) and (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
   }
+}
+
+/* header indentation */
+.header-anchor::before {
+  content: "";
+  display: block;
+  height: 59px; 
+  margin-top: -59px; 
+}
+
+.header-anchor {
+  scroll-margin-top: 59px; 
 }
