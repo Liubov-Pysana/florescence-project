@@ -1,27 +1,51 @@
-.about {
+.about-section {
   display: flex;
   gap: 40px;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .title-about {
   margin-bottom: 20px;
+  font-family: 'Junge', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
   text-align: center;
+  color: #060606;
 }
 
 .description-about {
-  max-width: 300px;
+  max-width: 450px;
   margin: 0 auto;
+  line-height: 1.6;
+  color: #060606;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-@media screen and (max-width: 320px) {
+.about-image {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .about-section {
+    flex-direction: column;
+  }
+
   .title-about {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .description-about {
-    font-size: 14px;
+    font-size: 13px;
     padding: 10px;
+  }
+  .about-image {
+    width: 100%;
   }
 }

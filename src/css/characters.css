@@ -1,11 +1,80 @@
-/* overlay on :hover <svg width="287" height="156" viewBox="0 0 287 156" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M1.04199 20.8723C7.15413 14.1098 26.8177 0.584723 56.5751 0.584717C86.3324 0.584711 94.2485 22.0491 121.014 26.5945C141.99 30.1565 154.511 30.08 175.5 26.5945C193.493 23.6064 201.79 12.6293 220.031 12.5492C249.302 12.4207 277.66 24.6177 286.042 47.9225V154.562H1.04199V20.8723Z" fill="#FDFDFD" stroke="#FDFDFD" />
-</svg> */
-
 .characters-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 66px;
   width: 100%;
+}
+
+.title-section-characters {
+  font-family: 'Junge', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  text-align: center;
+  color: #060606;
+}
+.character-image-container {
+  position: relative;
+  width: 320px;
+  height: 320px;
+}
+
+.character-image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 10;
+  background-image: url('../img/characters/wave.png');
+}
+
+.character-description {
+  bottom: 0;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  width: 100%;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transform: translateY(0%);
+}
+
+.title-description-character {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  color: #060606;
+  padding: 4px;
+}
+
+.character:hover .overlay {
+  opacity: 1;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .title-section-characters {
+    font-size: 30px;
+  }
+
+  .title-description-character {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+
+    padding: 15px;
+  }
+  .characters-container {
+    display: flex;
+    flex-direction: column;
+  }
 }

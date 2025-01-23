@@ -1,14 +1,32 @@
-<section class="container">
+<section id="hero" class="container">
   <div class="hero-container">
-    <img src="./img/hero/hero-bkg.jpg" alt="Florescence Game" />
+    <picture>
+      <source
+        srcset="../img/hero/hero-bkg-mob.jpg"
+        media="(max-width: 1199px)"
+      />
+      <source srcset="../img/hero/hero-bkg.jpg" media="(min-width: 1200px)" />
+      <img
+        src="../img/hero/hero-bkg-mob.jpg"
+        alt="Florescence Game"
+        class="hero-image"
+      />
+    </picture>
 
     <h1 class="headline">Florescence: My Bloom Garden</h1>
     <p class="slogan">Watch your garden bloom, one merge at a time!</p>
-    <h4 class="img-text">Play Now</h4>
-    <img
+    <h4 class="btn-text">Play Now</h4>
+    <a
+      href="https://play.google.com/store/apps/details?id=com.gamegarden.florescence"
       class="img-button"
-      src="./img/hero/google-play.png"
-      alt="Get it on Google Play"
-    />
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="../img/hero/google-play.png"
+        alt="Get it on Google Play"
+        class="google-play-icon"
+      />
+    </a>
   </div>
 </section>
