@@ -87,21 +87,16 @@
   }
 
   .container-advantages {
+    width: 1000px;
     padding: 20px 104px;
     gap: 24px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 14px 30px 14px;
-    width: 1200px;
+    padding: 0 14px 45px 14px;
     margin: 0 auto;
   }
 
   .advantages-title {
     font-size: 52px;
     margin-bottom: 34px;
-    /* padding-top: 45px; */
     padding-top: 0;
   }
 

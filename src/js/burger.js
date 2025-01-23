@@ -4,10 +4,12 @@ const nav = document.querySelector('.header-navigation');
 
 function openMenu() {
   nav.classList.add('active');
+  document.body.style.overflow = 'hidden';
 }
 
 function closeMenu() {
   nav.classList.remove('active');
+  document.body.style.overflow = '';
 }
 
 burgerBtn.addEventListener('click', openMenu);
