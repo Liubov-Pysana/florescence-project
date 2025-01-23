@@ -4,7 +4,7 @@
 }
 
 .container-gallery {
-  padding: 20px 14px;
+  padding: 40px 14px;
 }
 
 .title-gallery {
@@ -81,6 +81,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .container-gallery {
+    padding: 0 14px;
+  }
+
 .gallery {
     width: 1200px;
 }
