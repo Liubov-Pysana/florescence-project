@@ -12,7 +12,7 @@
   }
 
 .container-faq {
-    padding: 20px 14px;
+    padding: 0 14px 18px 14px;
 }
   
   .faq-item {
@@ -96,21 +96,23 @@
     
   .faq-question {
       width: 100%;
-      padding: 24px 30px;
+      padding: 24px 0;
       font-size: 30px;
       outline: none;
     }
 
     .faq-item:last-child .faq-question {
-      padding: 24px 30px;
+      padding: 24px 0;
     }
 
     .span-faq {
+      display: block;
       width: 576px;
+      margin-left: 30px;
     }
     
   .faq-toggle-icon {
-      right: 10%;
+      right: 5%;
       width: 62px;  
       height: 62px; 
     }
