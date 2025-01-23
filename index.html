@@ -21,7 +21,7 @@
     />
     
     <script type="module" crossorigin src="/florescence-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/florescence-project/assets/styles-8dab4b15.css">
+    <link rel="stylesheet" href="/florescence-project/assets/styles-4801d871.css">
   </head>
   <body>
     <header class="header section">
@@ -101,25 +101,43 @@
   </div>
 </header>
 
-    <section class="container">
+    <section id="hero" class="container">
   <div class="hero-container">
-    <img src="/florescence-project/assets/hero-bkg-a3b06ace.jpg" alt="Florescence Game" />
+    <picture>
+      <source
+        srcset="../img/hero/hero-bkg-mob.jpg"
+        media="(max-width: 1199px)"
+      />
+      <source srcset="../img/hero/hero-bkg.jpg" media="(min-width: 1200px)" />
+      <img
+        src="../img/hero/hero-bkg-mob.jpg"
+        alt="Florescence Game"
+        class="hero-image"
+      />
+    </picture>
 
     <h1 class="headline">Florescence: My Bloom Garden</h1>
     <p class="slogan">Watch your garden bloom, one merge at a time!</p>
-    <h4 class="img-text">Play Now</h4>
-    <img
+    <h4 class="btn-text">Play Now</h4>
+    <a
+      href="https://play.google.com/store/apps/details?id=com.gamegarden.florescence"
       class="img-button"
-      src="/florescence-project/assets/google-play-e03a432a.png"
-      alt="Get it on Google Play"
-    />
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="../img/hero/google-play.png"
+        alt="Get it on Google Play"
+        class="google-play-icon"
+      />
+    </a>
   </div>
 </section>
 
     <section id="about" class="section">
   <div class="container">
-    <h2 class="title-section">About the Game</h2>
-    <div class="about">
+    <h2 class="title-about">About the Game</h2>
+    <div class="about-section">
       <p class="description-about">
         Step into the enchanting world of Florescence: Flower Merge Game, where
         every merge brings your garden closer to perfection. Combine seeds,
@@ -137,19 +155,53 @@
 
     <section id="characters" class="section">
   <div class="container">
-    <h2>Meet the Characters</h2>
+    <h2 class="title-section-characters">Meet the Characters</h2>
     <div class="characters-container">
       <div class="character">
-        <img src="/florescence-project/assets/pers-1-69c12570.jpg" alt="Sprout the Fairy" />
-        <h3>Sprout the Fairy</h3>
+        <div class="character-image-container">
+          <img src="/florescence-project/assets/pers-1-1b0c02d1.jpg" alt="Sprout the Fairy" />
+          <div class="overlay">
+            <div class="character-description">
+              <p>
+                A mischievous yet lovable garden fairy who adds a touch of magic
+                to your merges. Sprout occasionally grants power-ups and special
+                items to help your garden flourish.
+              </p>
+            </div>
+          </div>
+        </div>
+        <h3 class="title-description-character">Sprout the Fairy</h3>
       </div>
+
       <div class="character">
-        <img src="/florescence-project/assets/pers-2-1739f9c0.jpg" alt="Lila the Gardener" />
-        <h3>Lila the Gardener</h3>
+        <div class="character-image-container">
+          <img src="/florescence-project/assets/pers-2-ef59b538.jpg" alt="Lila the Gardener" />
+          <div class="overlay">
+            <div class="character-description">
+              <p>
+                A kind-hearted botanist with a magical touch for growing
+                flowers. Lila guides you through the game, offering tips and
+                encouragement as you bring life to the gardens.
+              </p>
+            </div>
+          </div>
+        </div>
+        <h3 class="title-description-character">Lila the Gardener</h3>
       </div>
+
       <div class="character">
-        <img src="/florescence-project/assets/pers-3-3532dddf.jpg" alt="Petal the Cat" />
-        <h3>Petal the Cat</h3>
+        <div class="character-image-container">
+          <img src="/florescence-project/assets/pers-3-4d387e72.jpg" alt="Petal the Cat" />
+          <div class="overlay">
+            <div class="character-description">
+              <p>
+                A curious companion who loves exploring the garden and enjoys
+                the adventure of discovering new flowers.
+              </p>
+            </div>
+          </div>
+        </div>
+        <h3 class="title-description-character">Petal the Cat</h3>
       </div>
     </div>
   </div>
@@ -403,39 +455,59 @@
 </section>
 
     <section id="why" class="container section">
-  <h2>Why Choose This Game Over Others?</h2>
+  <h2 class="title-section-why">Why Choose This Game Over Others?</h2>
 
-  <div class="flower-right">
-    <img src="/florescence-project/assets/flower-1-e05827b3.png" alt="Innovative merging" />
-    <p>
-      Innovative Merging: Unlike other merge games, Florescence integrates
+  <div class="flowers-container-why">
+    
+   <div class="flower-container-why">
+     <p class="flower-text-why">
+      <span class="bolded">Innovative Merging:</span> Unlike other merge games, Florescence integrates
       storytelling, character interaction, and creative garden customization.
     </p>
+    <img
+      class="flower-img-why"
+      src="/florescence-project/assets/flower-1-e05827b3.png"
+      alt="Innovative merging"
+    /></div>
   </div>
 
-  <div class="flower-left">
-    <img src="/florescence-project/assets/flower-2-58ef5912.png" alt="Relaxing meets" />
-    <p>
-      Relaxation Meets Strategy: Combines soothing gameplay with challenging
+  <div class="flower-container-why">
+  
+    <img
+      class="flower-img-why"
+      src="/florescence-project/assets/flower-2-58ef5912.png"
+      alt="Relaxing meets"
+    />
+      <p class="flower-text-why">
+      <span class="bolded">Relaxation Meets Strategy:</span> Combines soothing gameplay with challenging
       objectives that keep you engaged.
     </p>
   </div>
 
-  <div class="flower-right">
-    <img src="/florescence-project/assets/flower-3-87a023dd.png" alt="Eco-friendly theme" />
-    <p>
-      Eco-friendly Theme: Promotes a love for nature and creativity while
+  <div class="flower-container-why">
+    <p class="flower-text-why">
+      <span class="bolded">Eco-friendly Theme:</span> Promotes a love for nature and creativity while
       offering endless fun.
     </p>
+    <img
+      class="flower-img-why"
+      src="/florescence-project/assets/flower-3-87a023dd.png"
+      alt="Eco-friendly theme"
+    />
   </div>
 
-  <div class="flower-left">
-    <img src="/florescence-project/assets/flower-4-3225d315.png" alt="Unique rewards that feel special" />
-    <p>
-      Unique Rewards: Rare flowers, magical items, and character interactions
+  <div class="flower-container-why">
+    <img
+      class="flower-img-why"
+      src="/florescence-project/assets/flower-4-3225d315.png"
+      alt="Unique rewards that feel special"
+    />
+    <p class="flower-text-why">
+      <span class="bolded">Unique Rewards:</span> Rare flowers, magical items, and character interactions
       make every merge feel special.
     </p>
   </div>
+</div>
 </section>
 
     <section id="faq" class="section faq">
