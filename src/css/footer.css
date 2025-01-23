@@ -1,78 +1,79 @@
 .footer {
-    max-width: 320px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 16px;
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 16px;
 }
 
 .container-footer {
-    padding: 20px 14px 0 14px;
+  padding: 20px 14px 0 14px;
 }
 
 .logo-footer {
-    width: 54px;
-    height: 54px;
+  width: 54px;
+  height: 54px;
 }
 
 .footer-list {
-   display: flex;
-   flex-wrap: wrap;  
-   align-items: center;
-   gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
 }
 
 .footer-list > li:nth-child(4) {
-   margin-top: -20px; 
+  margin-top: -20px;
 }
 
 .footer-link {
-    font-size: 10px;
-    text-decoration-line: underline;
-    cursor: pointer;
+  font-size: 10px;
+  text-decoration-line: underline;
+  cursor: pointer;
 }
 
 .footer-link:active,
 .footer-link:hover {
-    text-decoration: none;
-    color: var(--active-green-color);
+  text-decoration: none;
+  color: var(--active-green-color);
 }
 
 .footer-text {
-    font-size: 10px;
-    padding-left: 40px;
+  font-size: 10px;
+  padding-left: 40px;
 }
 
 @media screen and (min-width: 1200px) {
-    .footer {
-        max-width: 1200px;
-    }
+  .footer {
+    max-width: 1200px;
+  }
 
-    .container-footer {
-        padding: 32px 38px;
-    }
+  .container-footer {
+    padding: 32px 38px;
+  }
 
-    .logo-footer {
-        width: 80px;
-        height: 82px;
-        padding-left: 0;
-    }
+  .logo-footer {
+    width: 80px;
+    height: 82px;
+    padding-left: 0;
+  }
 
-    .footer-list {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-     }
-     
-     .footer-list > li:nth-child(4) {
-        margin-top: 0; 
-        margin-right: 58px;
-     }
-    
-     .footer-link {
-        font-size: 16px;
-    }
+  .footer-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-     .footer-text {
-        font-size: 16px;
-    }
+  .footer-list > li:nth-child(4) {
+    margin-top: 0;
+    margin-right: 58px;
+  }
+
+  .footer-link {
+    font-size: 16px;
+  }
+
+  .footer-text {
+    font-size: 16px;
+  }
 }

@@ -4,6 +4,7 @@
   justify-content: center;
   gap: 66px;
   align-items: center;
+  padding-bottom: 60px;
 }
 
 .title-section-characters {
@@ -65,7 +66,7 @@
 @media screen and (min-width: 320px) and (max-width: 1199px) {
   .title-section-characters {
     font-size: 30px;
-    padding-bottom: 18px;
+    padding-bottom: 24px;
   }
 
   .title-description-character {
@@ -79,5 +80,6 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+    padding-bottom: 0px;
   }
 }

@@ -1,11 +1,11 @@
 .header-wrapp {
-  width: 100%; 
-  max-width: 320px; 
+  width: 100%;
+  max-width: 320px;
   position: fixed;
   top: 0;
-  left: 50%; 
-  transform: translateX(-50%); 
-  margin: 0; 
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
   z-index: 999;
 }
 
@@ -16,6 +16,7 @@
 
 .logo-link {
   padding-top: 10px;
+  cursor: pointer;
 }
 
 .container-burger {
@@ -35,19 +36,21 @@
   display: none;
   position: fixed;
   top: 0;
-  left: 50%; 
-  transform: translateX(-50%); 
-  width: 100vw;  
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
   height: 100vh;
   background-color: var(--body-bg);
   flex-direction: column;
   padding-top: 10px;
   padding-left: 14px;
   z-index: 1000;
+  /* cursor: pointer; */
 }
 
 .header-navigation.active {
   display: flex;
+  /* cursor: pointer; */
 }
 
 .header-navigation-top {
@@ -80,10 +83,13 @@
   padding: 0;
   align-items: center;
   align-items: flex-start;
+  /* cursor: pointer; */
 }
 
 .header-navigation-link {
   font-size: 17px;
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .header-navigation-link:hover,
@@ -104,9 +110,9 @@
 @media screen and (min-width: 1200px) {
   .header-wrapp {
     width: 100%;
-    max-width: 1200px;  
-    left: 50%;  
-    transform: translateX(-50%);  
+    max-width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .container-main-header {
@@ -119,16 +125,17 @@
 
   .header-navigation {
     display: flex;
-    position: fixed;  
-    top: 8px;  
+    position: fixed;
+    top: 8px;
     left: 50%;
-    transform: translateX(-50%); 
-    width: 80%;  
+    transform: translateX(-50%);
+    width: 80%;
     padding-right: 0;
     height: auto;
     background: none;
     justify-content: space-between;
     align-items: center;
+    /* cursor: pointer; */
   }
 
   .header-navigation-top {
@@ -141,6 +148,7 @@
     gap: 38px;
     margin: 0;
     padding: 0;
+    /* cursor: pointer; */
   }
 
   .burger-menu {
@@ -149,6 +157,7 @@
 
   .header-navigation-link {
     font-size: 19px;
+    /* cursor: pointer; */
   }
 
   .header-navigation-list:nth-of-type(2) {
