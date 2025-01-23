@@ -9,7 +9,7 @@
 }
 
 .title-about {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   font-family: 'Junge', sans-serif;
   font-weight: 400;
   font-size: 52px;
@@ -18,7 +18,7 @@
 }
 
 .description-about {
-  max-width: 450px;
+  max-width: 292px;
   margin: 0 auto;
   line-height: 1.6;
   color: #060606;
@@ -27,7 +27,7 @@
 }
 
 .about-image {
-  width: 100%;
+  /* width: 100%; */
   max-width: 550px;
   height: auto;
 }
@@ -39,6 +39,7 @@
 
   .title-about {
     font-size: 26px;
+    margin-bottom: 18px;
   }
 
   .description-about {
@@ -46,6 +47,6 @@
     padding: 10px;
   }
   .about-image {
-    width: 100%;
+    width: 320px;
   }
 }
