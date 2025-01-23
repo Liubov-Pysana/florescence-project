@@ -13,30 +13,6 @@
 @import './faq.css';
 @import './footer.css';
 @import './advantages.css';
-@import './footer.css';
 @import './privacy-and-terms.css';
 
 
-@media (min-width: 320px) and (max-width: 1200px) {
-    .section {
-      background-color: var(--body-bg);
-    }
-    .title-section {
-      font-size: 52px;
-      margin-bottom: 35px;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .section {
-      background-color: var(--body-bg);
-    }
-
-    .title-section {
-      text-align: center;
-      font-family: var(--accent-font-family);
-      font-size: 30px;
-      margin-bottom: 24px;
-    }
-  }
-  

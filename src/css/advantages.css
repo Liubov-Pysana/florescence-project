@@ -1,7 +1,6 @@
 .advantages {
   max-width: 320px;
   width: 100%;
-  padding: 20px 14px 30px 14px;
   margin: 0 auto;
 }
 
@@ -9,6 +8,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 14px 30px 14px;
+}
+
+.advantages-title {
+  font-family: var(--accent-font-family);
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 54px;
+  padding-top: 20px;
 }
 
 .advantages-list {
@@ -74,13 +82,19 @@
 @media screen and (min-width: 1200px) {
   .advantages {
     max-width: 1200px;
-    padding: 44px 104px;
   }
 
   .container-advantages {
+    padding: 44px 104px;
     gap: 24px;
   }
 
+  .advantages-title {
+    font-size: 52px;
+    margin-bottom: 34px;
+    padding-top: 45px;
+  }
+  
   .advantages-list {
     gap: 42px;
   }
