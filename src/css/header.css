@@ -1,11 +1,11 @@
 .header-wrapp {
-  width: 100%;
+  width: 100vw;
   max-width: 320px;
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  margin: 0;
+  /* margin: 0; */
   z-index: 999;
 }
 
@@ -110,10 +110,7 @@
 
 @media screen and (min-width: 1200px) {
   .header-wrapp {
-    width: 100%;
     max-width: 1200px;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   .container-main-header {
@@ -160,6 +157,16 @@
 
   .header-navigation-list:nth-of-type(2) {
     display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header-wrapp {
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform: none;
   }
 }
 
