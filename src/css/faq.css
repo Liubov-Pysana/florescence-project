@@ -2,6 +2,7 @@
   max-width: 320px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .faq-title {
@@ -84,7 +85,6 @@
   .faq-title {
     font-size: 52px;
     margin-bottom: 35px;
-    padding-top: 60px;
   }
 
   .container-faq {
