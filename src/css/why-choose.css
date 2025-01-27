@@ -1,9 +1,9 @@
 .why {
-   max-width: 1200px;
-   width: 100%;
-   margin: 0 auto;
-   padding: 0 10px;
-   margin-bottom: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 20px;
 }
 
 .container-why-info {
@@ -25,7 +25,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .flower-img-why {
@@ -53,11 +52,12 @@
   .container-why-info {
     padding: 0 14px;
   }
- 
+
   .title-section-why {
     font-size: 30px;
     padding-bottom: 24px;
     margin: 0 auto;
+    padding-top: 32px;
   }
 
   .flowers-container-why {
@@ -72,6 +72,6 @@
 
   .flower-img-why {
     width: 155px;
-    height: 112px;
+    height: 76px;
   }
 }
