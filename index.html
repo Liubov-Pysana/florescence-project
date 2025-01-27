@@ -21,10 +21,10 @@
     />
     
     <script type="module" crossorigin src="/florescence-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/florescence-project/assets/styles-a48adf3b.css">
+    <link rel="stylesheet" href="/florescence-project/assets/styles-bf22bb3e.css">
   </head>
   <body>
-    <header class="header header-wrapp">
+    <header class="header-wrapp">
   <div class="container-main-header">
     <div class="container-burger">
       <a class="logo-link" href="./index.html">
@@ -108,43 +108,29 @@
   </div>
 </header>
 
-    <section id="hero" class="section">
-  <div class="container">
-    <div class="hero-container">
-      <picture>
-        <source
-          srcset="/florescence-project/assets/hero-bkg-mob-f4251596.jpg "
-          media="(max-width: 1199px)"
-        />
-        <source srcset="/florescence-project/assets/hero-bkg-9811bfef.jpg " media="(min-width: 1200px)" />
-        <img
-          src="/florescence-project/assets/hero-bkg-mob-f4251596.jpg"
-          alt="Florescence Game"
-          class="hero-image"
-        />
-      </picture>
-
-      <h1 class="headline">Florescence: My Bloom Garden</h1>
-      <p class="slogan">Watch your garden bloom, one merge at a time!</p>
-      <h4 class="btn-text">Play Now</h4>
-      <a
-        href="https://play.google.com/store/apps/details?id=com.gamegarden.florescence"
-        class="img-button"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="/florescence-project/assets/google-play-e03a432a.png"
-          alt="Get it on Google Play"
-          class="google-play-icon"
-        />
-      </a>
-    </div>
+    <section id="hero" class="section-hero">
+    <div class="hero">
+        <div class="hero-content">
+          <h1 class="headline">Florescence: My Bloom Garden</h1>
+        <p class="slogan">Watch your garden bloom, one merge at a time!</p>
+          <h4 class="btn-text">Play Now</h4>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.gamegarden.florescence"
+            class="img-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/florescence-project/assets/google-play-e03a432a.png"
+              alt="Get it on Google Play"
+              class="google-play-icon"
+            />
+          </a>
+   </div> 
   </div>
 </section>
 
-    <section id="about" class="section header-anchor">
-  <div class="container">
+    <section id="about" class="header-anchor about">
     <h2 class="title-about">About the Game</h2>
     <div class="about-section">
       <p class="description-about">
@@ -159,16 +145,14 @@
         <img src="/florescence-project/assets/about-me-df3f69cb.jpg" alt="Game Screenshot" />
       </div>
     </div>
-  </div>
 </section>
 
-    <section id="characters" class="section header-anchor">
-  <div class="container">
+    <section id="characters" class=" header-anchor section-character">
     <h2 class="title-section-characters">Meet the Characters</h2>
     <div class="characters-container">
       <div class="character">
         <div class="character-image-container">
-          <img src="/florescence-project/assets/pers-1-a7159429.jpg" alt="Sprout the Fairy" />
+          <img src="/florescence-project/assets/pers-1-a7159429.jpg" alt="Sprout the Fairy" width="284" height="288"/>
           <div class="overlay">
             <div class="character-description">
               <p>
@@ -184,7 +168,7 @@
 
       <div class="character">
         <div class="character-image-container">
-          <img src="/florescence-project/assets/pers-2-ef59b538.jpg" alt="Lila the Gardener" />
+          <img src="/florescence-project/assets/pers-2-ef59b538.jpg" alt="Lila the Gardener" width="284" height="288"/>
           <div class="overlay">
             <div class="character-description">
               <p>
@@ -200,7 +184,7 @@
 
       <div class="character">
         <div class="character-image-container">
-          <img src="/florescence-project/assets/pers-3-4d387e72.jpg" alt="Petal the Cat" />
+          <img src="/florescence-project/assets/pers-3-4d387e72.jpg" alt="Petal the Cat" width="284" height="288"/>
           <div class="overlay">
             <div class="character-description">
               <p>
@@ -213,10 +197,9 @@
         <h3 class="title-description-character">Petal the Cat</h3>
       </div>
     </div>
-  </div>
 </section>
 
-    <section id="advantages" class="section container advantages header-anchor">
+    <section id="advantages" class="advantages header-anchor">
   <h2 class="advantages-title">Advantages</h2>
   <div class="container-advantages">
     <ul class="advantages-list">
@@ -309,7 +292,7 @@
   </div>
 </section>
 
-    <section id="gallery" class="section container gallery header-anchor">
+    <section id="gallery" class="gallery header-anchor">
   <h2 class="title-gallery">Gallery</h2>
   <div class="container-gallery">
     <div class="swiper-container">
@@ -469,10 +452,11 @@
   </div>
 </section>
 
-    <section id="why" class="container section header-anchor">
+    <section id="why" class="header-anchor why">
   <div class="flowers-container-why">
     <h2 class="title-section-why">Why Choose This Game Over Others?</h2>
-
+    
+    <div class="container-why-info">
     <div class="flower-container-why">
       <p class="flower-text-why">
         <span class="bolded">Innovative Merging:</span> Unlike other merge
@@ -522,9 +506,10 @@
       </p>
     </div>
   </div>
+  </div>
 </section>
 
-    <section id="faq" class="faq section header-anchor">
+    <section id="faq" class="faq header-anchor">
   <h2 class="faq-title">FAQ</h2>
   <div class="container-faq">
     <ul class="faq-list">
