@@ -66,6 +66,10 @@
   padding: 4px;
 }
 
+.character-description-font {
+  font-size: 14px;
+}
+
 .character:hover .overlay {
   opacity: 1;
 }
@@ -78,6 +82,10 @@
   .title-section-characters {
     font-size: 30px;
     padding-bottom: 24px;
+  }
+
+  .character-description-font {
+    font-size: 13px;
   }
 
   .title-description-character {
