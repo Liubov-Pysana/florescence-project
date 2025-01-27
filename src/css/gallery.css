@@ -1,11 +1,11 @@
 .gallery {
   width: 320px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .container-gallery {
-  padding: 40px 14px;
-  padding-top: 20px;
+  padding: 20px 14px;
   margin: 0 auto;
   width: 292px;
 }
@@ -18,7 +18,6 @@
   line-height: 1.2;
   letter-spacing: 0%;
   padding-top: 20px;
-  /* margin-bottom: 24px; */
 }
 
 .swiper-wrapper {
@@ -85,14 +84,15 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .container-gallery {
-    padding: 0 14px;
-    width: 1200px;
-    padding-bottom: 50px;
-  }
-
   .gallery {
     width: 1200px;
+    margin: 0 auto;
+  }
+
+  .container-gallery {
+    padding-bottom: 53px;
+    width: 1152px;
+    padding-bottom: 50px;
   }
 
   .title-gallery {

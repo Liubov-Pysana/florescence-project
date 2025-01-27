@@ -19,6 +19,10 @@ document.addEventListener('click', (event) => {
   if (!nav.contains(event.target) && !burgerBtn.contains(event.target)) {
     closeMenu();
   }
+
+  nav.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
 });
 
 document.querySelectorAll('.header-navigation-link').forEach(link => {
@@ -39,3 +43,4 @@ document.querySelectorAll('.header-navigation-link').forEach(link => {
     }
   });
 });
+

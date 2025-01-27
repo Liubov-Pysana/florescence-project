@@ -2,6 +2,7 @@
   max-width: 320px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .faq-title {
@@ -12,7 +13,9 @@
 }
 
 .container-faq {
-  padding: 0 14px 18px 14px;
+  max-width: 292px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .faq-item {
@@ -24,7 +27,6 @@
 }
 
 .faq-question {
-  /* width: 292px; */
   width: 90%;
   text-align: left;
   background-color: var(--container-bg-olive);
@@ -83,11 +85,10 @@
   .faq-title {
     font-size: 52px;
     margin-bottom: 35px;
-    padding-top: 60px;
   }
 
   .container-faq {
-    padding: 0 62px 60px 62px;
+    max-width: 1076px;
   }
 
   .faq-item {

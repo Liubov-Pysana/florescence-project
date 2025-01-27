@@ -1,3 +1,16 @@
+.why {
+   max-width: 1200px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 10px;
+   margin-bottom: 20px;
+}
+
+.container-why-info {
+  margin: 0 auto;
+  padding: 35px 62px 0;
+}
+
 .title-section-why {
   font-family: 'Junge', sans-serif;
   font-weight: 400;
@@ -12,6 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .flower-img-why {
@@ -31,25 +45,33 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 1199px) {
+  .why {
+    max-width: 320px;
+    margin-bottom: 45px;
+  }
+
+  .container-why-info {
+    padding: 0 14px;
+  }
+ 
   .title-section-why {
     font-size: 30px;
     padding-bottom: 24px;
-    width: 320px;
     margin: 0 auto;
   }
 
   .flowers-container-why {
-    /* width: 292px; */
     margin-bottom: 20px;
   }
 
   .flower-text-why {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
-    width: 114px;
+    width: 135px;
   }
+
   .flower-img-why {
-    height: 85px;
-    /* width: auto; */
+    width: 155px;
+    height: 112px;
   }
 }

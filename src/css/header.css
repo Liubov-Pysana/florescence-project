@@ -1,5 +1,5 @@
 .header-wrapp {
-  width: 100%;
+  width: 100vw;
   max-width: 320px;
   position: fixed;
   top: 0;
@@ -68,11 +68,8 @@
   cursor: pointer;
   width: 42px;
   height: 31px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding-right: 14px;
-  margin: 0;
+  padding-top: 10px;
 }
 
 .header-navigation-list {
@@ -95,7 +92,7 @@
 
 .header-navigation-link:hover,
 .header-navigation-link:active {
-  color: #0c91003b;
+  color: var(--green-color);
 }
 
 .header-navigation.active .header-navigation-list {
@@ -110,10 +107,7 @@
 
 @media screen and (min-width: 1200px) {
   .header-wrapp {
-    width: 100%;
     max-width: 1200px;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   .container-main-header {
@@ -160,6 +154,16 @@
 
   .header-navigation-list:nth-of-type(2) {
     display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header-wrapp {
+      width: 100vw;
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform: none;
   }
 }
 
